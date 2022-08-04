@@ -1,7 +1,7 @@
 ##https://stackoverflow.com/questions/39352349/boto3-attach-detach-security-group-from-ec2-instance
 
 import boto3
-region = 'us-gov-west-1'
+region = 'us-west-1
 ec2 = boto3.resource('ec2' , region_name=region)
 
 # get security group id that you wanted to add/remove from the instances.

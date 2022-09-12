@@ -14,7 +14,6 @@ for each in ec2_resource.instances.all():
 
 # From the list of Instance ID find terminal protection enabled
 for each in list_instances:
-    #response = client.describe_instance_attribute(Attribute='disableApiTermination',InstanceId ='i-0680bfac7a219190b')
     response = client.describe_instance_attribute(Attribute='disableApiTermination',InstanceId = each)
     print(response['DisableApiTermination']['Value'])
     result = (response['DisableApiTermination']['Value'])
